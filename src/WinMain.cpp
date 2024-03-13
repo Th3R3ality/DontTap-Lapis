@@ -179,7 +179,6 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
             if (running)
             {
 
-                //SetWindowLongA(hwnd, GWL_EXSTYLE, (WS_EX_TOPMOST | WS_EX_NOACTIVATE));
                 SetWindowPos(hwnd, NULL, 24, 24, 250, 200, SWP_SHOWWINDOW | SWP_NOMOVE);
                 
                 Draw::D2::String("running", { 48,48 }, "66ff66", 6);
@@ -195,8 +194,8 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
                         BYTE g = GetGValue(pixel);
                         BYTE b = GetBValue(pixel);
 
-                        std::cout << std::format("{} {}\n", xTemp, yTemp);
-                        std::cout << std::format("{} {} {}\n\n", r, g, b);
+                        //std::cout << std::format("{} {}\n", xTemp, yTemp);
+                        //std::cout << std::format("{} {} {}\n\n", r, g, b);
                         //std::this_thread::sleep_for(std::chrono::milliseconds(100));
                         if (r <= maxLightness && g <= maxLightness && b <= maxLightness)
                         {
